@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34202.233
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Random_Number_Generator_Plus", "DXApplication1\Random_Number_Generator_Plus.csproj", "{8DA500A7-AE80-4E5C-8DCB-F542E3A29940}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "RNGSetup", "RNGSetup\RNGSetup.vdproj", "{CFA80F55-CBE9-4B82-AE75-DEF7E52C8914}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8DA500A7-AE80-4E5C-8DCB-F542E3A29940}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DA500A7-AE80-4E5C-8DCB-F542E3A29940}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DA500A7-AE80-4E5C-8DCB-F542E3A29940}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DA500A7-AE80-4E5C-8DCB-F542E3A29940}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CFA80F55-CBE9-4B82-AE75-DEF7E52C8914}.Debug|Any CPU.ActiveCfg = Debug
+		{CFA80F55-CBE9-4B82-AE75-DEF7E52C8914}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EF6C8230-4390-4480-AB3F-8463FF862AE8}
+	EndGlobalSection
+EndGlobal
