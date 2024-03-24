@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <RootNamespace>Randon_Number_Generator</RootNamespace>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+    <UseWindowsForms>False</UseWindowsForms>
+    <ApplicationIcon>icon.ico</ApplicationIcon>
+    <SignAssembly>False</SignAssembly>
+    <PackageId>Ramdom_Number_Generator</PackageId>
+    <Version>1.15.0</Version>
+    <Authors>ZhangYanming</Authors>
+    <Company>6018</Company>
+    <Product>Random Number Generator</Product>
+    <Description>随机生成数字</Description>
+    <PackageProjectUrl>https://github.com/ZhangZhongGuo123/Random_Number_Generator_Plus</PackageProjectUrl>
+    <PackageIcon>icon.bmp</PackageIcon>
+    <RepositoryUrl>https://github.com/ZhangZhongGuo123/Random_Number_Generator_Plus</RepositoryUrl>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="icon.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Xaml.Behaviors.Wpf" Version="1.1.77" />
+  </ItemGroup>
+
+</Project>
