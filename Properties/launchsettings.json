@@ -1,0 +1,10 @@
+﻿{
+    "profiles": {
+      "Random-Number Generator (Package)": {
+        "commandName": "MsixPackage"
+      },
+      "Random-Number Generator (Unpackaged)": {
+        "commandName": "Project"
+      }
+    }
+}

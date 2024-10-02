@@ -1,0 +1,106 @@
+﻿<Page
+    x:Class="Random_Number_Generator.Views.SettingsPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:helpers="using:Random_Number_Generator.Helpers"
+    xmlns:xaml="using:Microsoft.UI.Xaml"
+    mc:Ignorable="d">
+    <Page.Resources>
+        <helpers:EnumToBooleanConverter x:Key="EnumToBooleanConverter" />
+    </Page.Resources>
+    <ScrollViewer>
+    <Grid>
+        <StackPanel
+            x:Name="ContentArea">
+            <TextBlock x:Uid="Settings_Personalization" Style="{ThemeResource SubtitleTextBlockStyle}" />
+            <StackPanel Margin="{StaticResource SmallTopBottomMargin}">
+                <TextBlock x:Uid="Settings_Theme" />
+
+                <StackPanel Margin="{StaticResource XSmallTopMargin}">
+                    <RadioButton
+                        x:Uid="Settings_Theme_Light"
+                        Command="{x:Bind ViewModel.SwitchThemeCommand}"
+                        IsChecked="{x:Bind ViewModel.ElementTheme, Converter={StaticResource EnumToBooleanConverter}, ConverterParameter=Light, Mode=OneWay}"
+                        FontSize="15"
+                        GroupName="AppTheme">
+                        <RadioButton.CommandParameter>
+                            <xaml:ElementTheme>Light</xaml:ElementTheme>
+                        </RadioButton.CommandParameter>
+                    </RadioButton>
+                    <RadioButton
+                        x:Uid="Settings_Theme_Dark"
+                        Command="{x:Bind ViewModel.SwitchThemeCommand}"
+                        IsChecked="{x:Bind ViewModel.ElementTheme, Converter={StaticResource EnumToBooleanConverter}, ConverterParameter=Dark, Mode=OneWay}"
+                        FontSize="15"
+                        GroupName="AppTheme">
+                        <RadioButton.CommandParameter>
+                            <xaml:ElementTheme>Dark</xaml:ElementTheme>
+                        </RadioButton.CommandParameter>
+                    </RadioButton>
+                    <RadioButton
+                        x:Uid="Settings_Theme_Default"
+                        Command="{x:Bind ViewModel.SwitchThemeCommand}"
+                        IsChecked="{x:Bind ViewModel.ElementTheme, Converter={StaticResource EnumToBooleanConverter}, ConverterParameter=Default, Mode=OneWay}"
+                        FontSize="15"
+                        GroupName="AppTheme">
+                        <RadioButton.CommandParameter>
+                            <xaml:ElementTheme>Default</xaml:ElementTheme>
+                        </RadioButton.CommandParameter>
+                    </RadioButton>
+                </StackPanel>
+            </StackPanel>
+            <StackPanel Margin="{StaticResource XSmallTopMargin}">
+
+                <TextBlock x:Uid="General_Settings" TextWrapping="Wrap" Style="{ThemeResource SubtitleTextBlockStyle}" />
+                <TextBlock></TextBlock>
+                    <TextBlock Name="Minimum" TextWrapping="Wrap" x:Uid="Minimum_Number"></TextBlock>
+                <TextBlock></TextBlock>
+                    <TextBox Name="MinimumSet" TextChanged="MinimumSet_TextChanged" x:Uid="Minimum_Set"></TextBox>
+                    <TextBlock Name="MinimumErr" TextWrapping="Wrap"></TextBlock>
+                    <TextBlock Name="Maximum" x:Uid="Maximum_Number" TextWrapping="Wrap"></TextBlock>
+                <TextBlock></TextBlock>
+                    <TextBox Name="MaximumSet" TextWrapping="Wrap" TextChanged="MaximumSet_TextChanged" x:Uid="Maximum_Set"></TextBox>
+                    <TextBlock Name="MaximumErr" TextWrapping="Wrap"></TextBlock>
+                    <TextBlock Name="Number_of_draws" x:Uid="Number_of_draws" TextWrapping="Wrap"></TextBlock>
+                <TextBlock></TextBlock>
+                    <ComboBox Name="Number_of_drawsSet" SelectionChanged="Number_of_drawsSet_SelectionChanged" x:Uid="Select">
+                        <x:String>1</x:String>
+                        <x:String>2</x:String>
+                        <x:String>3</x:String>
+                        <x:String>4</x:String>
+                        <x:String>5</x:String>
+                        <x:String>6</x:String>
+                        <x:String>7</x:String>
+                        <x:String>8</x:String>
+                        <x:String>9</x:String>
+                        <x:String>10</x:String>
+                        <x:String>11</x:String>
+                        <x:String>12</x:String>
+                    </ComboBox>
+                <TextBlock></TextBlock>
+                    <TextBlock Name="Mode" x:Uid="Probability_adjustment_mode" TextWrapping="Wrap"></TextBlock>
+                    <TextBlock></TextBlock>
+                    <ComboBox Name="ModeSet" SelectionChanged="ModeSet_SelectionChanged" x:Uid="Select">
+                        <TextBlock x:Uid="No_Adjustment"></TextBlock>
+                        <TextBlock x:Uid="To_WhiteList"></TextBlock>
+                        <TextBlock x:Uid="Decrease_Possibility"></TextBlock>
+                    </ComboBox>
+                    <TextBlock></TextBlock>
+
+                    <TextBlock x:Uid="Settings_About" TextWrapping="Wrap" Style="{ThemeResource SubtitleTextBlockStyle}" />
+            </StackPanel>
+            <StackPanel Margin="{StaticResource XSmallTopMargin}">
+                <TextBlock Text="{x:Bind ViewModel.VersionDescription, Mode=OneWay}" Style="{ThemeResource BodyTextBlockStyle}" />
+
+                <TextBlock
+                    x:Uid="Settings_AboutDescription"
+                    Margin="{StaticResource XSmallTopMargin}"
+                    Style="{ThemeResource BodyTextBlockStyle}" />
+                <HyperlinkButton x:Uid="SettingsPage_PrivacyTermsLink" Margin="0,4,0,0" />
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+    </ScrollViewer>
+</Page>

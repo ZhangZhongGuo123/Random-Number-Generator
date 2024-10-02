@@ -10,10 +10,53 @@
     <SplashScreenSource>C:\Users\Admin\source\repos\Random-Number Generator\Random-Number Generator.png</SplashScreenSource>
     <PackageLogoSource>C:\Users\Admin\source\repos\Random-Number Generator\Random-Number Generator.png</PackageLogoSource>
     <BadgeLogoSource>C:\Users\Admin\source\repos\Random-Number Generator\Random-Number Generator.png</BadgeLogoSource>
+    <_LastSelectedProfileId>C:\Users\Admin\source\repos\Random-Number Generator\Properties\PublishProfiles\win10-x86.pubxml</_LastSelectedProfileId>
+    <UapAppxPackageBuildMode>SideloadOnly</UapAppxPackageBuildMode>
+    <AppxShowAllApps>False</AppxShowAllApps>
+    <AppxBuildConfigurationSelection>x86|x64|arm64</AppxBuildConfigurationSelection>
+    <PackageOptionalProjectsInIdeBuilds>False</PackageOptionalProjectsInIdeBuilds>
     <ActiveDebugProfile>Random-Number Generator (Package)</ActiveDebugProfile>
-    <_LastSelectedProfileId>D:\Users\Administrator\source\repos\Random-Number Generator\Properties\PublishProfiles\win10-x86.pubxml</_LastSelectedProfileId>
   </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'">
     <DebuggerFlavor>ProjectDebugger</DebuggerFlavor>
   </PropertyGroup>
+  <ItemGroup>
+    <None Update="Package.appxmanifest">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="App.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Styles\FontSizes.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Styles\TextBlock.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Styles\Thickness.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\HomePage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\NumberPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\SettingsPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\ShellPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <PRIResource Update="Strings\en-us\Resources.resw">
+      <SubType>Designer</SubType>
+    </PRIResource>
+  </ItemGroup>
 </Project>

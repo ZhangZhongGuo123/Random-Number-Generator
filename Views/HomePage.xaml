@@ -1,0 +1,29 @@
+﻿<Page
+    x:Class="Random_Number_Generator.Views.HomePage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <Viewbox Stretch="None">
+    <Grid x:Name="ContentArea">
+            <TextBlock x:Name="Num1" Text=" " HorizontalAlignment="Center" HorizontalTextAlignment="Center" Height="100" VerticalAlignment="Center" Width="95" Margin="0,0,290,275" FontFamily="Consolas" FontSize="30" Foreground="Red"/>
+            <TextBlock x:Name="Num2" Text=" " HorizontalAlignment="Center" HorizontalTextAlignment="Center" Height="100" VerticalAlignment="Center" Width="95" Margin="0,0,90,275" FontFamily="Consolas" FontSize="30" Foreground="Red"/>
+            <TextBlock x:Name="Num3" Text=" " HorizontalAlignment="Center" HorizontalTextAlignment="Center" Height="100" VerticalAlignment="Center" Width="95" Margin="100,0,0,275" FontFamily="Consolas" FontSize="30" Foreground="Red"/>
+            <TextBlock x:Name="Num4" Text=" " HorizontalAlignment="Center" HorizontalTextAlignment="Center" Height="100" VerticalAlignment="Center" Width="95" Margin="300,0,0,275" FontFamily="Consolas" FontSize="30" Foreground="Red"/>
+            <TextBlock x:Name="Num5" Text=" " HorizontalAlignment="Center" HorizontalTextAlignment="Center" Height="100" VerticalAlignment="Center" Width="95" Margin="0,0,290,150" FontFamily="Consolas" FontSize="30" Foreground="Red"/>
+            <TextBlock x:Name="Num6" Text=" " HorizontalAlignment="Center" HorizontalTextAlignment="Center" Height="100" VerticalAlignment="Center" Width="95" Margin="0,0,90,150" FontFamily="Consolas" FontSize="30" Foreground="Red"/>
+            <TextBlock x:Name="Num7" Text=" " HorizontalAlignment="Center" HorizontalTextAlignment="Center" Height="100" VerticalAlignment="Center" Width="95" Margin="100,0,0,150" FontFamily="Consolas" FontSize="30" Foreground="Red"/>
+            <TextBlock x:Name="Num8" Text=" " HorizontalAlignment="Center" HorizontalTextAlignment="Center" Height="100" VerticalAlignment="Center" Width="95" Margin="300,0,0,150" FontFamily="Consolas" FontSize="30" Foreground="Red"/>
+            <TextBlock x:Name="Num9" Text=" " HorizontalAlignment="Center" HorizontalTextAlignment="Center" Height="100" VerticalAlignment="Center" Width="95" Margin="0,0,290,25" FontFamily="Consolas" FontSize="30" Foreground="Red"/>
+            <TextBlock x:Name="Num10" Text=" " HorizontalAlignment="Center" HorizontalTextAlignment="Center" Height="100" VerticalAlignment="Center" Width="95" Margin="0,0,90,25" FontFamily="Consolas" FontSize="30" Foreground="Red"/>
+            <TextBlock x:Name="Num11" Text=" " HorizontalAlignment="Center" HorizontalTextAlignment="Center" Height="100" VerticalAlignment="Center" Width="95" Margin="100,0,0,25" FontFamily="Consolas" FontSize="30" Foreground="Red"/>
+            <TextBlock x:Name="Num12" Text=" " HorizontalAlignment="Center" HorizontalTextAlignment="Center" Height="100" VerticalAlignment="Center" Width="95" Margin="300,0,0,25" FontFamily="Consolas" FontSize="30" Foreground="Red"/>
+            <Button x:Name="Start" Click="Start_ClickAsync" x:Uid="Start_Button" Background="#FF1A6BA8" BorderBrush="#FF1A5DA8" Foreground="White" HorizontalAlignment="Center" Margin="0,0,60,50" Width="90" FontFamily="Arial" FontSize="14" Height="41" VerticalAlignment="Bottom"/>
+            <Button x:Name="Stop" Click="End" x:Uid="Finish_Button" HorizontalAlignment="Center" Margin="0,0,60,50" Width="90" FontFamily="Arial" FontSize="14" Height="41" VerticalAlignment="Bottom" Visibility="Collapsed"/>
+            <TextBlock x:Name="FromTo" x:Uid="FromTo" TextWrapping="Wrap" HorizontalAlignment="Center" Margin="150,0,0,0" Width="90" FontFamily="Consolas" FontSize="14" Height="78" VerticalAlignment="Bottom"/>
+
+        </Grid>
+    </Viewbox>
+
+</Page>

@@ -13,7 +13,7 @@
   <Identity
     Name="cdcfecba-b1bc-4894-ba00-7b690d69e9fb"
     Publisher="CN=ZhangZhongguo123"
-    Version="1.16.0.0" />
+    Version="1.16.3.0" />
     
   <mp:PhoneIdentity PhoneProductId="cdcfecba-b1bc-4894-ba00-7b690d69e9fb" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
     
@@ -64,6 +64,7 @@
 
   <Capabilities>
     <rescap:Capability Name="runFullTrust" />
+	<uap:Capability Name="documentsLibrary" />
   </Capabilities>
 
   <genTemplate:Metadata>
