@@ -1,41 +1,16 @@
-﻿<Window x:Class="Randon_Number_Generator.MainWindow"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:Randon_Number_Generator"
-        mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800" ResizeMode = "NoResize">
-    <Grid x:Name="随机抽取" Background="#FFE4F7EC" MinWidth="800" MinHeight="434.76" MaxWidth="800" MaxHeight="434.76" AutomationProperties.Name="随机抽取" >
-        <Button x:Name="Start" Content="开始抽号" HorizontalAlignment="Center" Margin="0,0,0,52" Width="90" Background="White" FontFamily="Arial Black" FontSize="16" Height="41" VerticalAlignment="Bottom" Click="Run"/>
-        <Button x:Name="Stop" Content="结束抽号" HorizontalAlignment="Center" Margin="0,0,0,52" Width="90" Background="White" FontFamily="Arial Black" FontSize="16" Height="41" VerticalAlignment="Bottom" Click="End" Visibility="Hidden"/>
-        <Label x:Name="Num1" Content="" HorizontalAlignment="Left" Height="60" VerticalAlignment="Top" Width="100" Margin="0,375,0,0" FontFamily="Consolas" FontSize="36" Foreground="Red"/>
-        <Label x:Name="Num2" Content="" HorizontalAlignment="Left" Height="60" VerticalAlignment="Top" Width="100" Margin="0,375,0,0" FontFamily="Consolas" FontSize="36" Foreground="Red"/>
-        <Label x:Name="Num3" Content="" HorizontalAlignment="Left" Height="60" VerticalAlignment="Top" Width="100" Margin="0,375,0,0" FontFamily="Consolas" FontSize="36" Foreground="Red"/>
-        <Label x:Name="Num4" Content="" HorizontalAlignment="Left" Height="60" VerticalAlignment="Top" Width="100" Margin="0,375,0,0" FontFamily="Consolas" FontSize="36" Foreground="Red"/>
-        <Label x:Name="Num5" Content="" HorizontalAlignment="Left" Height="60" VerticalAlignment="Top" Width="100" Margin="0,375,0,0" FontFamily="Consolas" FontSize="36" Foreground="Red"/>
-        <Label x:Name="Num6" Content="" HorizontalAlignment="Left" Height="60" VerticalAlignment="Top" Width="100" Margin="0,375,0,0" FontFamily="Consolas" FontSize="36" Foreground="Red"/>
-        <Label x:Name="Num7" Content="" HorizontalAlignment="Left" Height="60" VerticalAlignment="Top" Width="100" Margin="0,375,0,0" FontFamily="Consolas" FontSize="36" Foreground="Red"/>
-        <Label x:Name="Num8" Content="" HorizontalAlignment="Left" Height="60" VerticalAlignment="Top" Width="100" Margin="0,375,0,0" FontFamily="Consolas" FontSize="36" Foreground="Red"/>
-        <Label x:Name="Num9" Content="" HorizontalAlignment="Left" Height="60" VerticalAlignment="Top" Width="100" Margin="0,375,0,0" FontFamily="Consolas" FontSize="36" Foreground="Red"/>
-        <Label x:Name="Num10" HorizontalAlignment="Left" Height="60" VerticalAlignment="Top" Width="100" Margin="0,375,0,0" FontFamily="Consolas" FontSize="36" Foreground="Red"/>
-        <Label x:Name="Title" Content="幸运儿" HorizontalAlignment="Center" Height="50" VerticalAlignment="Top" Width="120" FontFamily="Cascadia Mono SemiBold" FontSize="35" Margin="0,50,0,0" FontWeight="Bold"/>
-        <Rectangle HorizontalAlignment="Left" Height="104" Margin="561,310,0,0" Stroke="White" VerticalAlignment="Top" Width="229" Fill="#FFD4D4D4"/>
-        <TextBox xmlns:local="clr-namespace:Randon_Number_Generator" local:NumericTextBoxBehavior.AllowOnlyNumbers="True" InputMethod.IsInputMethodEnabled="False" x:Name="Minimum" HorizontalAlignment="Left" Height="17" Margin="664,322,0,0" TextWrapping="Wrap" Text="1" VerticalAlignment="Top" Width="112" TextChanged="MinimumChange"/>
-        <TextBox xmlns:local="clr-namespace:Randon_Number_Generator" local:NumericTextBoxBehavior.AllowOnlyNumbers="True" InputMethod.IsInputMethodEnabled="False" x:Name="Maximum" HorizontalAlignment="Left" Height="17" Margin="664,353,0,0" TextWrapping="Wrap" Text="52" VerticalAlignment="Top" Width="112" TextChanged="MaximumChange"/>
-        <TextBox xmlns:local="clr-namespace:Randon_Number_Generator" local:NumericTextBoxBehavior.AllowOnlyNumbers="True" InputMethod.IsInputMethodEnabled="False" x:Name="Once" HorizontalAlignment="Left" Height="17" Margin="664,383,0,0" TextWrapping="Wrap" Text="1" VerticalAlignment="Top" Width="112" TextChanged="OnceChange"/>
-        <RichTextBox x:Name="SettingsText" Margin="571,321,141,30" Background="#FFD4D4D4" BorderBrush="#FFD4D4D4" IsReadOnly="True">
-            <FlowDocument>
-                <Paragraph>
-                    <Run Text="           最小值"/>
-                </Paragraph>
-                <Paragraph>
-                    <Run Text="           最大值"/>
-                </Paragraph>
-                <Paragraph>
-                    <Run Text=" 一次抽取人数"/>
-                </Paragraph>
-            </FlowDocument>
-        </RichTextBox>
-    </Grid>
-</Window>
+﻿<windowex:WindowEx
+    x:Class="Random_Number_Generator.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Random_Number_Generator"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:windowex="using:WinUIEx"
+    MinWidth="500"
+    MinHeight="500"
+    PersistenceId="MainWindow"
+    mc:Ignorable="d">
+    <Window.SystemBackdrop>
+        <MicaBackdrop/>
+    </Window.SystemBackdrop>
+</windowex:WindowEx>
